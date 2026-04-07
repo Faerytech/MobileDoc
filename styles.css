@@ -86,7 +86,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 90px;
 }
 
 .nav-logo {
@@ -100,7 +100,7 @@ ul {
 }
 
 .nav-logo img {
-  height: 44px;
+  height: 80px;
   width: auto;
   object-fit: contain;
 }
@@ -170,7 +170,7 @@ ul {
   display: none;
   flex-direction: column;
   position: fixed;
-  top: 64px;
+  top: 90px;
   left: 0;
   width: 100%;
   background: var(--dark);

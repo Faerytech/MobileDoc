@@ -10,14 +10,14 @@
    CSS VARIABLES
    ============================================================ */
 :root {
-  --black:      #0a0d14;
-  --dark:       #111620;
-  --card:       #181e2e;
-  --border:     #252d42;
-  --amber:      #c9a84c;   /* logo gold */
-  --amber-dark: #a88836;
-  --white:      #f0ece4;
-  --muted:      #7a8aaa;
+  --black:      #0a0a0a;
+  --dark:       #141414;
+  --card:       #1a1a1a;
+  --border:     #2e2e2e;
+  --amber:      #cc2222;   /* red */
+  --amber-dark: #a01818;
+  --white:      #f5f5f5;
+  --muted:      #888888;
   --font-head:  'Bebas Neue', sans-serif;
   --font-body:  'DM Sans', sans-serif;
 }

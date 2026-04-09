@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Doc's Mobile Services</title>
+  <meta name="description" content="Get in touch with Doc's Mobile Services. Call 601-434-7602 for emergency locksmith or mobile mechanic services, or send a message for carwash and detail bookings." />
+
+  <meta property="og:title" content="Contact | Doc's Mobile Services" />
+  <meta property="og:description" content="Call 601-434-7602 or send a message. Mobile mechanic, locksmith, and carwash services — anytime, any place." />
+  <meta property="og:type" content="website" />
+
+  <link rel="canonical" href="https://mobile-doc.com/contact.html" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =====================================================
+       NAVBAR
+  ===================================================== -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="mobiledoclogo.png" alt="Doc's Mobile Services" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="tel:6014347602" class="nav-cta">📞 601-434-7602</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="tel:6014347602" class="mobile-cta">📞 Call Now — 601-434-7602</a>
+  </nav>
+
+  <!-- =====================================================
+       PAGE HERO
+  ===================================================== -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="section-label">Reach Out</p>
+      <h1>CONTACT</h1>
+      <p>For emergencies, call directly. For everything else, the form works great.</p>
+    </div>
+  </section>
+
+  <div class="stripe-accent"></div>
+
+  <!-- =====================================================
+       CONTACT LAYOUT
+  ===================================================== -->
+  <div class="contact-layout">
+
+    <!-- Left: contact info -->
+    <div class="contact-info">
+      <h2>GET IN TOUCH</h2>
+      <p>
+        For locked out emergencies or roadside breakdowns, call the number below —
+        we're available around the clock. For carwash bookings or general questions,
+        the form is the fastest way to reach us.
+      </p>
+
+      <div class="contact-method">
+
+        <a href="tel:6014347602" class="contact-item">
+          <span class="icon">📞</span>
+          <div class="contact-detail">
+            <span class="contact-label">Phone — 24/7 Emergency</span>
+            <span class="contact-value">601-434-7602</span>
+          </div>
+        </a>
+
+        <a href="mailto:Bullsmilkpro1800@gmail.com" class="contact-item">
+          <span class="icon">✉️</span>
+          <div class="contact-detail">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">Bullsmilkpro1800@gmail.com</span>
+          </div>
+        </a>
+
+        <div class="contact-item">
+          <span class="icon">📍</span>
+          <div class="contact-detail">
+            <span class="contact-label">Address</span>
+            <span class="contact-value">2303 W 4th Street, Hattiesburg, MS 39402</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="icon">🕐</span>
+          <div class="contact-detail">
+            <span class="contact-label">Locksmith & Mechanic Hours</span>
+            <span class="contact-value">24 Hours, 7 Days a Week</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="icon">✨</span>
+          <div class="contact-detail">
+            <span class="contact-label">Carwash & Detail Hours</span>
+            <span class="contact-value">Flexible — by appointment</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Right: contact form -->
+    <div class="contact-form-wrap">
+      <h3>SEND A MESSAGE</h3>
+      <p class="form-sub">We'll get back to you as soon as possible.</p>
+
+      <form id="contact-form" action="https://formspree.io/f/xvzvnzej" method="POST">
+
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="601-555-0000" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service">
+            <option value="">— Select a service —</option>
+            <option value="flat">Mobile Flat Repair</option>
+            <option value="mechanic">Mobile Mechanic / Repair</option>
+            <option value="tow">Towing Service</option>
+            <option value="junk">Junk Car Buyout</option>
+            <option value="locksmith">Emergency Locksmith</option>
+            <option value="carwash">Carwash & Detail</option>
+            <option value="other">Other / Not Sure</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us what's going on, where you're located, or when you'd like to schedule..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary form-submit">Send Message</button>
+
+        <div class="form-success" id="form-success">
+          ✓ Message sent! We'll be in touch soon. For emergencies, call 601-434-7602.
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- =====================================================
+       FOOTER
+  ===================================================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo"><img src="mobiledoclogo.png" alt="Doc's Mobile Services" /></div>
+        <p>Mobile mechanic, emergency locksmith, and mobile flat repair. We come to you — anytime, any place.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#mechanic">Mobile Mechanic</a></li>
+          <li><a href="services.html#locksmith">Emergency Locksmith</a></li>
+          <li><a href="services.html#flatrepair">Mobile Flat Repair</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:6014347602">601-434-7602</a></li>
+          <li><a href="contact.html">Send a Message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Doc's Mobile Services. All rights reserved.</p>
+      <p>Site by <a href="https://faerytech.net" target="_blank">Faery Tech</a></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
